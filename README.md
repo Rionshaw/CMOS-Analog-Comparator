@@ -168,7 +168,7 @@ measured during transient simulation.
   <li>Total power estimated using supply voltage.</li>
 </ul>
 <img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-3.png" alt="Power Consumption">
-
+<p>Average Power Calculation</p>
 <img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot.png" alt="Average Power">
 <p>
 <strong>Average Power =></strong> 98.18 µW
@@ -194,9 +194,5 @@ measured during transient simulation.
   <tr>
     <td>Average Power</td>
     <td>98.18 µW</td>
-  </tr>
-  <tr>
-    <td>Output Swing</td>
-    <td>0 V – 1 V</td>
   </tr>
 </table>
