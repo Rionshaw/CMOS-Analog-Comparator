@@ -1,6 +1,5 @@
 <h1>CMOS Analog Comparator Design using gpdk090</h1>
 
-<h2>Project Overview</h2>
 
 <p>
 This project presents the transistor-level design and simulation of a CMOS Analog Comparator 
@@ -71,3 +70,24 @@ Gain Stage
         ↓
 CMOS Output Stage
 </pre>
+
+
+<h2>Objective</h2>
+
+<ul>
+  <li>Design CMOS Analog Comparator using GPDK090 technology.</li>
+  <li>Compare analog inputs to produce digital output.</li>
+  <li>Analyze DC and transient response characteristics.</li>
+  <li>Evaluate propagation delay and power consumption.</li>
+</ul>
+
+<br>
+
+<h2>Tools Used</h2>
+
+<ul>
+  <li>Cadence Virtuoso</li>
+  <li>GPDK090 CMOS Technology Library</li>
+  <li>Analog Design Environment (ADE)</li>
+  <li>Waveform Viewer</li>
+</ul>
