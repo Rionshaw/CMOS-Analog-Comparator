@@ -91,3 +91,9 @@ CMOS Output Stage
   <li>Analog Design Environment (ADE)</li>
   <li>Waveform Viewer</li>
 </ul>
+
+
+
+<h2>Schematic Design</h2>
+
+<img src="https://github.com/Rionshaw/cmos-nand-gate-gpdk090/blob/0c17e513281cb6642c11c4d4fa045b23dae0888b/Screenshot-4.png" alt="Schematic of NAND gate">
