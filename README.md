@@ -32,8 +32,8 @@ The comparator evaluates two input voltages and generates a digital output based
 </p>
 
 <ul>
-  <li><strong>V+</strong> : Input Signal</li>
-  <li><strong>V−</strong> : Reference Voltage</li>
+  <li><strong>V+</strong> => Input Signal</li>
+  <li><strong>V−</strong> => Reference Voltage</li>
 </ul>
 
 <h3>Logic Behavior</h3>
@@ -96,4 +96,107 @@ CMOS Output Stage
 
 <h2>Schematic Design</h2>
 
-<img src="https://github.com/Rionshaw/cmos-nand-gate-gpdk090/blob/0c17e513281cb6642c11c4d4fa045b23dae0888b/Screenshot-4.png" alt="Schematic of NAND gate">
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-6.png" alt="Schematic of Analog Comparetor">
+
+
+<h2>Simulation Results</h2>
+
+<h3>1. DC Sweep Analysis</h3>
+
+<p>
+DC sweep analysis was performed to observe comparator switching behavior 
+and determine the threshold region where output transition occurs.
+</p>
+
+<ul>
+  <li>Input voltage swept across operating range.</li>
+  <li>Reference voltage maintained at constant value.</li>
+  <li>Output transition verified near switching threshold.</li>
+</ul>
+
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-8.png" alt="DC Sweep">
+
+<br>
+
+<h3>2. Transient Analysis</h3>
+
+<p>
+Transient simulation was performed to verify dynamic comparator operation 
+under time-varying input conditions.
+</p>
+
+<ul>
+  <li>Sinusoidal input applied to comparator input.</li>
+  <li>Reference voltage kept constant.</li>
+  <li>Output response monitored over simulation time.</li>
+</ul>
+
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-2.png" alt="Transient Response">
+
+<br>
+
+<h3>3. Propagation Delay Measurement</h3>
+
+<p>
+Propagation delay was measured between input threshold crossing 
+and corresponding output transition.
+</p>
+
+<ul>
+  <li>Input crossing point identified.</li>
+  <li>Output switching instant measured.</li>
+  <li>Time difference calculated as propagation delay.</li>
+</ul>
+
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-4.png" alt="Propagation Delay">
+<p>
+<strong>Measured Delay =></strong> 36.39 µs
+</p>
+
+<br>
+
+<h3>4. Power Consumption Analysis</h3>
+
+<p>
+Power consumption was calculated using average supply current 
+measured during transient simulation.
+</p>
+
+<ul>
+  <li>Supply current extracted from VDD source.</li>
+  <li>Average current computed using waveform calculator.</li>
+  <li>Total power estimated using supply voltage.</li>
+</ul>
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot-3.png" alt="Power Consumption">
+
+<img src="https://github.com/Rionshaw/CMOS-Analog-Comparator/blob/111ed62e52891c44fa58082f10e7f3bf4374a3d8/Screenshot.png" alt="Average Power">
+<p>
+<strong>Average Power =></strong> 98.18 µW
+</p>
+
+<br>
+
+<h3>5. Performance Summary</h3>
+
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>Supply Voltage</td>
+    <td>1 V</td>
+  </tr>
+  <tr>
+    <td>Propagation Delay</td>
+    <td>36.39 µs</td>
+  </tr>
+  <tr>
+    <td>Average Power</td>
+    <td>98.18 µW</td>
+  </tr>
+  <tr>
+    <td>Output Swing</td>
+    <td>0 V – 1 V</td>
+  </tr>
+</table>
