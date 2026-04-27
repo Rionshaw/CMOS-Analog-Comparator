@@ -24,3 +24,50 @@ The project demonstrates the analog IC design flow in <strong>Cadence Virtuoso</
 including schematic implementation, transient analysis, DC sweep characterization, 
 propagation delay measurement, and power calculation.
 </p>
+
+
+<h2>Comparator Operation</h2>
+
+<p>
+The comparator evaluates two input voltages and generates a digital output based on their relative magnitude.
+</p>
+
+<ul>
+  <li><strong>V+</strong> : Input Signal</li>
+  <li><strong>V−</strong> : Reference Voltage</li>
+</ul>
+
+<h3>Logic Behavior</h3>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td>V+ &gt; V−</td>
+    <td>HIGH</td>
+  </tr>
+  <tr>
+    <td>V+ &lt; V−</td>
+    <td>LOW</td>
+  </tr>
+</table>
+
+<br>
+
+<h2>Circuit Architecture</h2>
+
+<p>
+The CMOS Analog Comparator is implemented using a multi-stage analog architecture for signal comparison and amplification.
+</p>
+
+<pre>
+Differential Pair
+        ↓
+Active Load
+        ↓
+Gain Stage
+        ↓
+CMOS Output Stage
+</pre>
